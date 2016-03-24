@@ -22,7 +22,6 @@
 #ifndef __TGA_H
 #define __TGA_H 1
 
-#include <tgaconfig.h>  /* include our config header before anything else */
 #include <stdio.h>
 
 /* Tell C++ that we have C types and declarations. */
@@ -39,12 +38,7 @@
 /* Some macros to cope with non-ANSI C or C++ compilers.
  * (NOTE: This shouldn't be neccessary anymore nowadays)
  */
-#undef __P
-#if defined STDC_HEADERS || defined __cplusplus
 # define __P(args) args
-#else
-# define __P(args) ()
-#endif
 
 /* __FILE__ and __LINE__ are gcc specific */
 #ifndef __FILE__

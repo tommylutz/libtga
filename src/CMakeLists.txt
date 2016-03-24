@@ -1,6 +1,5 @@
 SET(LIBTGA_SRCS
     tga.c
-    tgaconfig.h
     tga.h
     tgaread.c
     tgawrite.c )
