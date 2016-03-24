@@ -4,7 +4,9 @@ SET(LIBTGA_SRCS
     tgaread.c
     tgawrite.c )
 
-ADD_LIBRARY(tga STATIC
+ADD_LIBRARY(tga_static STATIC
+            ${LIBTGA_SRCS} )
+ADD_LIBRARY(tga SHARED
             ${LIBTGA_SRCS} )
 
 TARGET_INCLUDE_DIRECTORIES(tga PUBLIC
