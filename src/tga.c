@@ -91,7 +91,7 @@ TGAClose(TGA *tga)
 }
 
 
-char*
+const char*
 TGAStrError(tuint8 code)
 {
 	if (code >= TGA_ERRORS) code = TGA_ERROR;

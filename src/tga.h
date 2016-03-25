@@ -86,7 +86,7 @@ enum {  TGA_OK = 0, 		/* success */
 #define TGA_ERRORS 8  /* total number of error codes */
 
 /* text strings corresponding to the error codes */
-static char*
+static const char*
 tga_error_strings[] = {
 	"Success",
 	"Error",
@@ -189,7 +189,7 @@ size_t TGAWriteScanlines __P((TGA *tga, tbyte *buf, size_t sln, size_t n,
 int TGAWriteImage __P((TGA *tga, TGAData *data));
 
 
-char* TGAStrError __P((tuint8 code));
+const char* TGAStrError __P((tuint8 code));
 
 tlong __TGASeek __P((TGA *tga, tlong off, int whence));
 
