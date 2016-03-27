@@ -160,7 +160,7 @@ struct _TGA {
 __BEGIN_DECLS
 
 
-TGA* TGAOpen __P((char *name, char *mode));
+TGA* TGAOpen __P((const char *name, const char *mode));
 
 TGA* TGAOpenFd __P((FILE *fd));
 

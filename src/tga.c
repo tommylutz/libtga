@@ -25,8 +25,8 @@
 
 
 TGA*
-TGAOpen(char *file, 
-	char *mode)
+TGAOpen(const char *file, 
+	const char *mode)
 {
  	TGA *tga;
 	FILE *fd;
